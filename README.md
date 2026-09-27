@@ -78,6 +78,7 @@ The cycle-accurate simulation output matches the pre-computed fixed-point PyTorc
 ---
 
 ## 🔬 Waveform Timing Analysis (GTKWave Proof)
+![GTKWave Simulation Waveforms](assets/GTKWave%20Output.png)
 * Inputs `a00` and `b00` stream in at Cycle 1.
 * The delayed input ports `a10` and `b01` are successfully held at `0` until Cycle 2, validating the **Wavefront Pipeline Scheduling**.
 * The unactivated top-row accumulation matrix calculations (`-1018` and `-1486`) are successfully routed through the combinational multiplexer nodes and truncated to exactly **`0`**, validating the **ReLU Hardware Layer**.
